@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../Task/css/style.css">
+<title> calculator </title>
+
+<script>
+    
+</script>
+</head>
+<body>
+  
+<div class="container">
+    <fieldset id="container">
+    <h2 style="text-align: center;">calculator</h2>
+
+<form name="cal">
+<input type="text" id="display" name="display" readonly >
+<br>
+<br>
+<br>
+<div class="contain">
+<input class="buttondigits" type="button" value="7" onclick="cal.display.value += '7'">
+<input class="buttondigits" type="button" value="8" onclick="cal.display.value += '8'">
+<input class="buttondigits" type="button" value="9" onclick="cal.display.value += '9'">
+<input class="mathButtons" type="button" value="+" onclick="cal.display.value += '+'">
+
+</div>
+
+<div class="contain">
+<input class="buttondigits" type="button" value="4" onclick="cal.display.value += '4'">
+<input class="buttondigits" type="button" value="5" onclick="cal.display.value += '5'">
+<input class="buttondigits" type="button" value="6" onclick="cal.display.value += '6'">
+<input class="mathButtons" type="button" value="-" onclick="cal.display.value += '-'">
+</div>
+
+<div class="contain">
+<input class="buttondigits" type="button" value="1" onclick="cal.display.value += '1'">
+<input class="buttondigits" type="button" value="2" onclick="cal.display.value += '2'">
+<input class="buttondigits" type="button" value="3" onclick="cal.display.value += '3'">
+<input class="mathButtons" type="button" value="*" onclick="cal.display.value += '*'">
+</div>
+
+<div class="contain">
+<input class="mathButtons" type="button" value="^" onclick="cal.display.value+='**'">
+
+<input class="buttondigits" type="button" value="0" onclick="cal.display.value += '0'">
+<input class= "mathButtons" type="button" value="=" onclick="cal.display.value = calculation(cal.display.value)">
+<input class="mathButtons" type="button" value="/" onclick="cal.display.value += '/'">
+
+</div>
+<div class="contain">
+    <input id="clearButton" class="button" id="btn" type="button" value="Clear" onclick="cal.display.value = ''">
+
+</div>
+<div class="contain1">
+    <div id="history">
+        <h3> <u>Calculation History </u></h3>
+        <p></p>
+        </div>
+</div>
+
+</form> 
+
+<script src="../Task/js/cal.js">
+    
+</script>
+
+</fieldset>
+</div>
+
+   
+    
+
+
+</body>
+</html>
